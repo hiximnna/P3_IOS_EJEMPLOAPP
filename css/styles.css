@@ -1,130 +1,134 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background: linear-gradient(135deg, #4e54c8, #8f94fb);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.app {
-  width: 100%;
-  max-width: 390px;
-  background: #ffffff;
-  border-radius: 30px;
-  overflow: hidden;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-}
-
-.header {
-  background: linear-gradient(135deg, #ff7e5f, #feb47b);
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-.header h1 {
-  font-size: 1.8rem;
-}
-
-.header p {
-  margin-top: 5px;
-  font-size: 0.95rem;
-}
-
-.perfil {
-  background: #fff4ef;
-  text-align: center;
-  padding: 15px;
-  border-bottom: 1px solid #eee;
-}
-
-.perfil h2 {
-  color: #ff7e5f;
-  margin-bottom: 5px;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-around;
-  padding: 15px;
-  gap: 10px;
-}
-
-.menu button {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  border-radius: 12px;
-  background: #4e54c8;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.menu button:hover {
-  background: #373cc0;
-}
-
-main {
-  padding: 15px;
-}
-
-.seccion {
-  display: none;
-}
-
-.seccion.activa {
-  display: block;
-}
-
-.seccion h2 {
-  margin-bottom: 12px;
-  color: #4e54c8;
-}
-
-.card {
-  background: #f7f7ff;
-  border-left: 6px solid #ff7e5f;
-  border-radius: 14px;
-  padding: 15px;
-  margin-bottom: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
-
-.card h3 {
-  color: #ff7e5f;
-  margin-bottom: 6px;
-}
-
-.card p {
-  color: #444;
-  line-height: 1.5;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-around;
-  background: #4e54c8;
-  color: white;
-  padding: 15px;
-  font-size: 1.4rem;
-}
-
-@media (max-width: 480px) {
-  .header h1 {
-    font-size: 1.5rem;
-  }
-
-  .menu {
-    flex-direction: column;
-  }
-}
+1  * {
+2    margin: 0;
+3    padding: 0;
+4    box-sizing: border-box;
+5    font-family: Arial, sans-serif;
+6  }
+7  
+8  body {
+9    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+10   min-height: 100vh;
+11   display: flex;
+12   justify-content: center;
+13   align-items: center;
+14   padding: 20px;
+15 }
+16  
+17 .app {
+18   width: 100%;
+19   max-width: 390px;
+20   background: #ffffff;
+21   border-radius: 30px;
+22   overflow: hidden;
+23   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+24 }
+25  
+26 .header {
+27   background: linear-gradient(135deg, #ff7e5f, #feb47b);
+28   color: white;
+29   text-align: center;
+30   padding: 20px;
+31 }
+32  
+33 .header h1 {
+34   font-size: 1.8rem;
+35 }
+36  
+37 .header p {
+38   margin-top: 5px;
+39   font-size: 0.95rem;
+40 }
+41  
+42 .perfil {
+43   background: #fff4ef;
+44   text-align: center;
+45   padding: 15px;
+46   border-bottom: 1px solid #eee;
+47 }
+48  
+49 .perfil h2 {
+50   color: #ff7e5f;
+51   margin-bottom: 5px;
+52 }
+53  
+54 .menu {
+55   display: flex;
+56   justify-content: space-around;
+57   padding: 15px;
+58   gap: 10px;
+59 }
+60  
+61 .menu button {
+62   flex: 1;
+63   padding: 10px;
+64   border: none;
+65   border-radius: 12px;
+66   background: #4e54c8;
+67   color: white;
+68   font-weight: bold;
+69   cursor: pointer;
+70   transition: 0.3s;
+71 }
+72  
+73 .menu button:hover {
+74   background: #373cc0;
+75 }
+76  
+77 main {
+78   padding: 15px;
+79 }
+80  
+81 .seccion {
+82   display: none;
+83 }
+84  
+85 .seccion.activa {
+86   display: block;
+87 }
+88  
+89 .seccion h2 {
+90   margin-bottom: 12px;
+91   color: #4e54c8;
+92 }
+93  
+94 .card {
+95   background: #f7f7ff;
+96   border-left: 6px solid #ff7e5f;
+97   border-radius: 14px;
+98   padding: 15px;
+99   margin-bottom: 12px;
+100  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+101}
+102 
+103 .card h3 {
+104   color: #ff7e5f;
+105   margin-bottom: 6px;
+106 }
+107 
+108 .card p {
+109   color: #444;
+110   line-height: 1.5;
+111 }
+112 
+113 .footer {
+114   display: flex;
+115   justify-content: space-around;
+116   background: #4e54c8;
+117   color: white;
+118   padding: 15px;
+119   font-size: 1.4rem;
+120 }
+121 
+122 @media (max-width: 480px) {
+123   .header h1 {
+124     font-size: 1.5rem;
+125   }
+126 
+127   .menu {
+128     flex-direction: column;
+129   }
+130 
+131   .menu button {
+132     width: 100%;
+133   }
+134 }
